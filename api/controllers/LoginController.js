@@ -13,5 +13,19 @@ module.exports = {
     // console.log(req.session);
     return res.view('login/index', locals);
   }, 
+  reset(req, res) {
+    // data
+    console.log('reset +++++++++++++++++++++++++++++++');
+    var locals = {};
+    // console.log(req.session);
+    return res.view('login/reset', locals);
+  }, 
+  create(req, res) {
+    // data
+    console.log('reset +++++++++++++++++++++++++++++++');
+    var locals = {};
+    // console.log(req.session);
+    return res.view('login/create', locals);
+  }, 
 };
 

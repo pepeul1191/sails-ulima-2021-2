@@ -20,7 +20,10 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'home/index' },
-  '/login': { action: 'login/index' },
+  'GET /login': { action: 'login/index' },
+  'GET /login/reset-password': { action: 'login/reset' },
+  'GET /login/create-account': { action: 'login/create' },
+  'POST /login': { action: 'login/index' },
 
 
   /***************************************************************************
