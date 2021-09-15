@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="/styles/styles.css"/>
-  <link rel="stylesheet" type="text/css" href="/styles/login.css"/>
-</head>
-<body>
-  <form class="form-signin" action="/forgot-password" method="post" id="forgot-password" style="">
+<%- include('../partials/blank_header') %>
+<form class="form-signin" action="/forgot-password" method="post" id="forgot-password" style="">
     <h1 class="h3 mb-3 font-weight-normal">Recuperar Contraseña</h1>
     <input type="hidden" name="key" value="value">
     <span class="extraData"></span>
@@ -35,5 +24,4 @@
     </div>
     <p class="mt-5 mb-3 text-muted">Powered By <a href="http://softweb.pe/"> Softtware Web Perú</a> © 2017-2018</p>
   </form>
-</body>
-</html>
+  <%- include('../partials/blank_footer') %>
