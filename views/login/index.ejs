@@ -1,4 +1,47 @@
-login
-
-<a href="/login/reset-password">Recuperar contraseña</a>
-<a href="/login/create-account">Crear Cuenta</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/styles/styles.css"/>
+  <link rel="stylesheet" type="text/css" href="/styles/login.css"/>
+</head>
+<body>
+  <form class="form-signin" action="/login" method="post" id="login" style="">
+    <h1 class="h3 mb-3 font-weight-normal">Bienvenido</h1>
+    <input type="hidden" name="key" value="value">
+    <span class="extraData"></span>
+    <!--USER -->
+    <label for="user" class="sr-only">User</label>
+    <input type="text" id="user" class="form-control" placeholder="Usuario" required="" autofocus="" name="user">
+    <!--CSRF -->
+    
+    <!--PASS -->
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="" name="password">
+    <!--MESSAGE-->
+    <p class="message" style="margin-top:10px;" id="message"></p>
+    <!--BUTTON -->
+    <button class="btn btn-lg btn-primary btn-block" type="submit" style="margin-bottom: 1.5px;">
+      Ingresar
+    </button>
+    <button class="btn btn-lg btn-success btn-block" type="submit" disabled>
+      <i class="fa fa-google" aria-hidden="true"></i>
+      Ingresar con Google
+    </button>
+    <!--FooTER LOGIN NAV -->
+    <div class="link-login">
+      <a class="" href="/login/create-account">
+        Registrarse
+      </a>
+      <a id="forgotpassword" class="pull-right" href="/login/reset-password">
+        Olvidó su Contraseña
+      </a>
+    </div>
+    <p class="mt-5 mb-3 text-muted">Powered By <a href="http://softweb.pe/"> Softtware Web Perú</a> © 2017-2018</p>
+  </form>
+</body>
+</html>
